@@ -7,7 +7,6 @@ class App extends Component {
   render() {
     return (
       <div data-testid="app" className="App">
-        <p>hello world</p>
         <StudentTeamCard />
         <StudentListCard />
       </div>
