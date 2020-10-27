@@ -27,7 +27,7 @@ function StudentTeamCard() {
     <div className="student_team">
       <div className="student_team_title">
         <span>分组列表</span>
-        <button type="button" onClick={divideToGroup}>
+        <button className="student_team_button" type="button" onClick={divideToGroup}>
           分组学员
         </button>
       </div>
