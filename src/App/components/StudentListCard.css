@@ -1,0 +1,11 @@
+.student_list_card {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  text-align: center;
+  padding: 20px 0px;
+  grid-gap: 10px 10px;
+}
+
+.student_card {
+  background-color: #eeeeee;
+}

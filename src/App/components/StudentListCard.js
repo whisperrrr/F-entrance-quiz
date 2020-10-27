@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './StudentListCard.css';
 
 function StudentListCard() {
   const [data, setData] = useState({ students: [{ id: '', name: '' }] });
@@ -14,11 +15,11 @@ function StudentListCard() {
   }, []);
 
   return (
-    <ul>
+    <div className="student_list_card">
       {data.students.map((i) => (
-        <li key={i.id}>{i.name}</li>
+        <div className="student_card" key={i.id}>{`${i.id}.${i.name}`}</div>
       ))}
-    </ul>
+    </div>
   );
 }
 
