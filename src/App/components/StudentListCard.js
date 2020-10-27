@@ -9,7 +9,6 @@ function StudentListCard() {
     const fetchData = async () => {
       const result = await axios('http://localhost:8080/students');
       setData(result.data);
-      console.log(result.data);
     };
     fetchData();
   }, []);
@@ -19,6 +18,7 @@ function StudentListCard() {
       {data.students.map((i) => (
         <div className="student_card" key={i.id}>{`${i.id}.${i.name}`}</div>
       ))}
+      <input type="text" name="new-student" />
     </div>
   );
 }
