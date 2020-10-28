@@ -1,14 +1,15 @@
 import React from 'react';
+import './Group.css';
 
 function Group(props) {
   const { group, members } = props;
 
   return (
     <>
-      <div>{`${group} 组`}</div>
-      <div>
+      <div className="team-table-title">{`${group + 1} 组`}</div>
+      <div className="team-table-content">
         {members.map((member) => (
-          <span>{`${member.id}.${member.name}`}</span>
+          <span className="team-member">{`${member.id}.${member.name}`}</span>
         ))}
       </div>
     </>

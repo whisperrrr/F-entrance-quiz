@@ -20,15 +20,15 @@ function StudentTeamCard() {
   };
 
   return (
-    <div className="student_team">
-      <div className="student_team_title">
+    <div className="student-team">
+      <div className="student-team-title">
         <span>分组列表</span>
-        <button className="student_team_button" type="button" onClick={divideToGroup}>
+        <button className="student-team-button" type="button" onClick={divideToGroup}>
           分组学员
         </button>
       </div>
       {isDivide && dividedStudent && (
-        <div className="student_team_card">
+        <div className="student-team-card">
           {dividedStudent.dividedStudent.map((i, index) => (
             <Group group={index} members={i} />
           ))}

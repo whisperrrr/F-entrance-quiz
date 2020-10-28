@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './StudentListCard.css';
 
@@ -14,7 +14,7 @@ function StudentListCard() {
   }, []);
 
   return (
-    <div className="student_list_card">
+    <div className="student-list-card">
       {data.students.map((i) => (
         <div className="student_card" key={i.id}>{`${i.id}.${i.name}`}</div>
       ))}

@@ -1,8 +1,13 @@
-.student_team_title {
+.student-team-title {
   display: flex;
   justify-content: space-between;
+  margin: 10px 0;
 }
 
-.student_team_button {
+.student-team-button {
   background-color: #ea5455;
+}
+
+.student-team-card {
+  text-align: center;
 }
