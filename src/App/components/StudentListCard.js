@@ -11,7 +11,7 @@ function StudentListCard() {
   };
 
   const postStudent = async (student) => {
-    await axios.post('http://localhost:8080/newstudent', student).then(fetchData());
+    await axios.post('http://localhost:8080/student', { id: 16, name: student });
   };
 
   useEffect(() => {
